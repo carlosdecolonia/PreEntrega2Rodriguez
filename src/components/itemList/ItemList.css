@@ -1,0 +1,7 @@
+.card img {
+    width: 100%;  /* Asegura que la imagen llene el ancho de la tarjeta */
+    align-self: center;
+    height: 250px; /* Ajusta esto para tu diseño específico */
+    margin-bottom: 20px;
+    object-fit: cover; /* Esto asegura que la imagen se cubra adecuadamente, aunque puede cortarse */
+  }
