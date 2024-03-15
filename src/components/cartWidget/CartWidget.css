@@ -14,3 +14,7 @@ button{
     
     
 }
+.cart-icon{
+    position: absolute;
+    top: 20px;
+}

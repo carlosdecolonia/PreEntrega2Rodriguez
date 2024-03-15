@@ -9,10 +9,9 @@ function NavBar() {
     // <>
     <Navbar bg="light" data-bs-theme="light" fixed="top">
       <Container>
-
-
+       
         <Link to="/">
-          <img src="img/logo_react.jpg" alt="Logo mi Tienda" />
+          <img src="/img/logo_react.jpg" alt="Logo mi Tienda" />
         </Link>
 
         <nav  >
@@ -21,9 +20,6 @@ function NavBar() {
           <NavLink to="/categoria/Accesorios">Accesorios</NavLink>
           <NavLink to="/categoria/Outlet">Outlet</NavLink>
         </nav>
-
-
-
 
         <Nav className="ml-auto">
           <Nav.Link href="#shopping-cart"> <CartWidget /> </Nav.Link>

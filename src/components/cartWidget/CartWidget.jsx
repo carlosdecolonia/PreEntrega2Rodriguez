@@ -8,9 +8,9 @@ const CartWidget = ({counter}) => {
         <button>
         <BsCart />
         </button>
-        <div style={{display:"flex"}}>
+        <div className="cart-icon">
             <Badge bg="danger">{counter}</Badge>
-            <BsCart color='violet' fontSize={'1.5rem'}/>
+            <BsCart color='violet' fontSize={'2.5rem'}/>
         </div>
         <span className="cart-number">0</span>
     </div>

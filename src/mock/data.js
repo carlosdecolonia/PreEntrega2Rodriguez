@@ -139,7 +139,7 @@ const productos = [
 
 
   //funcion que devuelve productos (promesa)
-  const getProductos = () => {
+  export const getProductos = () => {
     return new Promise ((resolve, reject)=>{
         let error = false
         setTimeout(()=>{
@@ -151,4 +151,18 @@ const productos = [
             }, 1000)
         })
   }
-  export { getProductos };
+
+  //funcion que va a mostrar el detalle de un item
+  export const getOneProduct = (id) =>{
+  return new Promise ((resolve, reject) =>{
+    let error = false
+    setTimeout (() =>{
+      if(error){
+        reject('El producto no existe')
+      }else{
+        let oneProduct = productos.find((prod) => prod.id === id)
+        resolve(oneProduct)
+      }
+    },1000)
+  })
+}
